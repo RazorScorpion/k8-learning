@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+spec:
+  containers:
+  - name: kripal-nginx
+    image: nginx:1.21
+    ports:
+    - containerPort: 8080
+  - name: watcher
+    image: afakharany/watcher
