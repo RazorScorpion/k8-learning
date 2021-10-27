@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-pod
+  labels:
+    app: java-docker-project
+spec:
+  containers:
+  - name: java-docker
+    image: kripalbora/java-docker
+    ports:
+    - name: java-port
+      containerPort: 8081
