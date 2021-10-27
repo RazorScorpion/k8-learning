@@ -4,8 +4,8 @@ metadata:
   name: java-service
 spec:
   ports:
-  - port: 9091
-    nodePort: 9092
+  - port: 30091
+    nodePort: 30092
     targetPort: java-port
     protocol: TCP
   selector:
